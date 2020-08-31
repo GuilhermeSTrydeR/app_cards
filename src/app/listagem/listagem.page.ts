@@ -14,7 +14,11 @@ export class ListagemPage implements OnInit {
 
   ngOnInit() {
 
-    console.log(this.apiService.getCards())
+    this.apiService.getCards().subscribe((result:any) => {
+
+      this.cards = result.news
+
+    } )
   
 
 

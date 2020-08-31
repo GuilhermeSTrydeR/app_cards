@@ -7,12 +7,14 @@
 <ion-content>
 <h1>Cartas Aleatorias</h1>
 <p>
-  esse aplicativo gera a partir da api: <br> 
-  <a href="http://deckofcardsapi.com/">Deck of Cards API</a> cartas aleatorias <br> 
-  de um deck 'real' que após sacar todas as cartas, é necessario <br>
-  outro baralho.
-</p>
-
+ esse App funciona da seguinte forma <br>
+ primeiro gere um nova baralho nesse link abaixo;
+ <a href="https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1" target="_blank">Baralho</a> 
+ copie o 'deck_id' <br>
+ da pagina que foi aberta e cole no atributo deck_id <br>
+ desse link abaixo: <br> https://deckofcardsapi.com/api/deck/[[deck_id]]/draw/?count=1 <br>
+ no atributo '?count' voce define o nuemero de cartas a serem sacadas <br>
+ daquele baralho
+</p> 
   <img src="/assets/images/cards.png" alt="">
-
 </ion-content>

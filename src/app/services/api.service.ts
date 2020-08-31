@@ -12,7 +12,7 @@ export class ApiService {
 
   public getCards(){
 
-    return this.httpClient.get('https://deckofcardsapi.com/api/deck/tn8qraj3mlhe/draw/?count=1')
+    return this.httpClient.get('https://deckofcardsapi.com/api/deck/1hbza3m4uwwb/draw/?count=3')
 
   }
 }
