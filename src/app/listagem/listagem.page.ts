@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-listagem',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListagemPage implements OnInit {
 
-  constructor() { }
+  public cards = [];
+
+  constructor(private apiService: ApiService) { }
 
   ngOnInit() {
+
+    console.log(this.apiService.getCards())
+  
+
+
   }
 
 }
