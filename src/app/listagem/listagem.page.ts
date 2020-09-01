@@ -16,7 +16,7 @@ export class ListagemPage implements OnInit {
 
     this.apiService.getCards().subscribe((result:any) => {
 
-      this.cards = result.news
+      this.cards = result.cards
 
     } )
   
