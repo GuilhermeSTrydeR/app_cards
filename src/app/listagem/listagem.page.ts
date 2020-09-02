@@ -19,9 +19,22 @@ export class ListagemPage implements OnInit {
       this.cards = result.cards
 
     } )
-  
-
 
   }
 
+  sacar(){
+
+    this.apiService.getCards().subscribe((result:any) => {
+
+      this.cards = result.cards
+
+    } )
+
+  }
+
+  alerta(){
+
+    return alert("Funcionalidade ainda não implementada!")
+
+  }
 }
