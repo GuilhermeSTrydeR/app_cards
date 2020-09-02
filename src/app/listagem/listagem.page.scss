@@ -1,16 +1,30 @@
 button{
 
-    
-    margin: 25px;
-    display: flex;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
 
 
 }
 
-button ion-button{
+
+
+button #buttons{
+
+    margin: 25px;
+    display: flex;
+    
+}
+
+button ion-button {
 
    margin: 10px;
+   
+   
 
+}
+
+ion-list{
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
 
 }

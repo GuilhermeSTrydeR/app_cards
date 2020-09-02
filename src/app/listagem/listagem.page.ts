@@ -9,6 +9,7 @@ import { ApiService } from '../services/api.service';
 export class ListagemPage implements OnInit {
 
   public cards = [];
+  public Deck:any;
 
   constructor(private apiService: ApiService) { }
 
@@ -29,12 +30,11 @@ export class ListagemPage implements OnInit {
       this.cards = result.cards
 
     } )
-
   }
 
-  alerta(){
+  novo_deck(){
 
-    return alert("Funcionalidade ainda não implementada!")
+    return alert('funcionalidade ainda não implementada!')
 
   }
 }

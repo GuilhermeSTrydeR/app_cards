@@ -12,11 +12,22 @@
   
   <button>
 
-    <ion-button (click)='sacar()'>Sacar</ion-button>
-    <ion-button (click)='alerta()'>Deck &nbsp;</ion-button>
+    <ion-list>
+      <p>Quantas cartas voce quer sacar?</p>  
+      <ion-item>
+        <ion-range id="range_cartas" min="1" max="52" pin="true" color="secondary">
+          <ion-label slot="start">1</ion-label>
+          <ion-label slot="end">52</ion-label>
+        </ion-range>
+      </ion-item>
+    </ion-list>
+
+    <ion-div id="buttons">
+      <ion-button (click)='sacar()'>Sacar</ion-button>
+      <ion-button (click)='novo_deck()'>Deck &nbsp;</ion-button>
+    </ion-div>
 
   </button>
-  
   <ion-card *ngFor="let c of cards">
       <ion-card-header>
         
@@ -32,11 +43,4 @@
       
   </ion-card>
 
-  <p>Atualize o navegador para gerar uma nova carta!</p>
-
-  <h1>Se você está lendo essa mensagem e não aparece nenhuma carta, As cartas acabaram!</h1>
-  <p>
-    gere um novo baralho e adicione o link <br>
-    em /app/service/api.services.ts no retorno do método getCards()
-  </p>
 </ion-content>
